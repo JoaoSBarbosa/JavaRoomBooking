@@ -5,6 +5,12 @@ public class Tenant {
 	private String email;
 	private int room;
 	
+	public Tenant(String name, String email, int room) {
+		this.email = email;
+		this.name = name;
+		this.room = room;
+	}
+	
 	public String getName() {
 		return name;
 	}
