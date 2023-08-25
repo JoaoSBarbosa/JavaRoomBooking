@@ -23,7 +23,7 @@ public class Program {
 					+ "\nPlease enter a valid value greater than 0 and less than or equal to 10, "
 					+ "\nindicating the number of people who will be renting");
 			
-			
+			System.out.println("----------*----------");
 			System.out.print("How many rooms will be rented? ");
 			n=sc.nextInt();
 		}
