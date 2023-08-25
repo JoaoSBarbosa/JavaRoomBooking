@@ -1,3 +1,5 @@
+![GitHub top language](https://img.shields.io/github/languages/top/JoaoSBarbosa/JavaRoomBooking)
+
 # Gerenciamento de Aluguel de Quartos em Pensionato. 👨🏿‍💻🏠
 
 Projeto Java de gerenciamento de aluguel de quartos em um pensionato.
