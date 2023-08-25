@@ -28,9 +28,9 @@ public class Program {
 			n=sc.nextInt();
 		}
 		System.out.println();
-		Tenant[] vetor = new Tenant[n];
+		Tenant[] vetor = new Tenant[10];
 		sc.nextLine();
-		for(int i =0; i < vetor.length; i++) {
+		for(int i =0; i < n; i++) {
 			System.out.printf("Rent #%d:%n", i+1);
 			System.out.print("Name: ");
 			String name = sc.nextLine();
@@ -40,12 +40,14 @@ public class Program {
 			int room = sc.nextInt();
 			sc.nextLine();
 			System.out.println();
-			vetor[i] = new Tenant(name,email,room);
+			vetor[room] = new Tenant(name,email,room);
 		}
 		
 		System.out.println("Busy rooms: ");
 		for(int i =0; i< vetor.length; i++) {
-			System.out.printf("%d: %s, %s%n", vetor[i].getRoom(), vetor[i].getName(), vetor[i].getEmail());
+			if(vetor[i] !=null) {
+				System.out.printf("%d: %s, %s%n", vetor[i].getRoom(), vetor[i].getName(), vetor[i].getEmail());
+			}
 		}
 		
 		sc.close();
